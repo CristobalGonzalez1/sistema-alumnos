@@ -75,8 +75,7 @@ pipeline {
             }
         }
 
-        //(Parte B, paso B4): aquí va la etapa "Version Control"
-        stage('Version Control') {
+                stage('Version Control') {
             // Solo se versiona la documentación de builds 100% correctos y NO en las ejecuciones programadas
             when {
                 allOf {
